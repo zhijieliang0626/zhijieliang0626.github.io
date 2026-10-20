@@ -96,7 +96,7 @@ const NOTES = [
   { kind:"self", file:"notes/superconductor-notes.pdf", status:"draft", updated:"2026.09.28", pages:16, lang:"ja",
     title:{en:"Superconductivity Notes", ja:"超伝導ノート", zh:"超导笔记"},
     topics:{en:"Basics of superconductivity · BCS theory", ja:"超伝導現象の基礎 · BCS理論", zh:"超导现象基础 · BCS 理论"} },
-  { kind:"self", file:"notes/semiconductor-notes.pdf", status:"draft", updated:"2026.10.02", pages:37, lang:"zh",
+  { kind:"self", file:"notes/semiconductor-notes.pdf", status:"draft", updated:"2026.10.02", pages:37, lang:""ja",
     title:{en:"Semiconductor Notes", ja:"半導体の学習ノート", zh:"半导体学习笔记"},
     topics:{en:"Devices · band theory · carriers · conduction", ja:"デバイス · バンド理論 · キャリア · 電気伝導", zh:"器件 · 能带理论 · 载流子 · 电导"} },
   /* 课程笔记（手写） */
