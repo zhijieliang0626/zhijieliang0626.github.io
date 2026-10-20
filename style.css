@@ -201,3 +201,9 @@ footer time{font-family:var(--mono)}
 :root[data-theme="dark"] .nstatus.draft{color:#FFC76B;background:#3A2A0C}
 :root[data-theme="dark"] .nstatus.done{color:#7FD9A5;background:#123222}
 @media (max-width:560px){.notes li{grid-template-columns:minmax(0,1fr) auto}.notes .nstatus{grid-column:1/-1;justify-self:start}}
+#notes{display:flex;flex-direction:column;gap:48px}
+.group-lead{color:var(--muted);font-size:14px}
+.nstatus.course{color:var(--accent);background:var(--accent-soft)}
+.notes li{grid-template-columns:104px minmax(0,1fr) auto}
+.notes .nstatus{justify-self:start}
+@media (max-width:560px){.notes li{grid-template-columns:minmax(0,1fr) auto}}
