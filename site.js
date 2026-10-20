@@ -3,6 +3,7 @@ const names = {en:"LIANG Zhijie", ja:"梁 志杰", zh:"梁志杰"};
 const kana = "りょう しけつ";
 const T = {
   en:{
+    mail_lab:"Lab", mail_uni:"University", 
     g_self:"Study notes", g_self_sub:"Typeset in LaTeX. Drafts are updated as I write.", g_course:"Course notes", g_course_sub:"Handwritten notes from my courses at Osaka University.", st_course:"Handwritten", term_s:"Spring–Summer", term_a:"Autumn–Winter", 
     st_draft:"Draft", st_done:"Complete", written_in:"In", pages:"{n} pages", langname:{zh:"Chinese", ja:"Japanese", en:"English"}, notes_note:"Notes still in progress are marked Draft and updated as I write.", 
     count:"{n} photos", 
@@ -32,6 +33,7 @@ const T = {
     updated:"Last updated", copy:"Copy", copied:"Copied"
   },
   ja:{
+    mail_lab:"研究室", mail_uni:"学生用", 
     g_self:"自習ノート", g_self_sub:"LaTeX で書いています。「執筆中」のものは随時更新します。", g_course:"講義ノート", g_course_sub:"大阪大学の授業で取った手書きのノートです。", st_course:"手書き", term_s:"春夏", term_a:"秋冬", 
     st_draft:"執筆中", st_done:"完成", written_in:"言語：", pages:"{n} ページ", langname:{zh:"中国語", ja:"日本語", en:"英語"}, notes_note:"「執筆中」のノートは書き進めながら随時更新しています。", 
     count:"{n} 枚", 
@@ -61,6 +63,7 @@ const T = {
     updated:"最終更新", copy:"コピー", copied:"コピーしました"
   },
   zh:{
+    mail_lab:"研究室", mail_uni:"学校", 
     g_self:"自学笔记", g_self_sub:"用 LaTeX 写的笔记，“编写中”的会随时更新。", g_course:"课程笔记", g_course_sub:"在大阪大学上课时的手写笔记。", st_course:"手写", term_s:"春夏学期", term_a:"秋冬学期", 
     st_draft:"编写中", st_done:"已完成", written_in:"语言：", pages:"{n} 页", langname:{zh:"中文", ja:"日语", en:"英语"}, notes_note:"标为“编写中”的笔记还在写，会随时更新。", 
     count:"{n} 张照片", 
@@ -255,12 +258,11 @@ let saved = null; try{ saved = localStorage.getItem("lang"); }catch(_){}
 const nav = (navigator.language || "").toLowerCase();
 setLang(saved || (nav.startsWith("ja") ? "ja" : nav.startsWith("zh") ? "zh" : "en"));
 
-const btn = $("copyBtn");
-if(btn) btn.addEventListener("click", () => {
-  const t = $("mail").textContent.replace("(at)","@");
-  const sel = () => { const r=document.createRange(); r.selectNodeContents($("mail")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); };
+document.querySelectorAll(".mails .copy").forEach(btn => btn.addEventListener("click", () => {
+  const el = btn.parentElement.querySelector(".mail"), t = el.textContent.replace("(at)","@");
+  const sel = () => { const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r); };
   try{ navigator.clipboard.writeText(t).then(() => { btn.textContent = T[cur].copied; setTimeout(()=>btn.textContent=T[cur].copy,1500); }, sel); }catch(_){ sel(); }
-});
+}));
 
 /* Superconductivity drawings: Meissner effect (hero) and Abrikosov vortex lattice (strips) */
 function colors(){
