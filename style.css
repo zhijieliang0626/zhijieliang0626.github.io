@@ -164,3 +164,5 @@ footer time{font-family:var(--mono)}
 #hobbies{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:560px){#hobbies{grid-template-columns:minmax(0,1fr)}}
 #gallery{display:flex;flex-direction:column;gap:10px}
+.edu li{grid-template-columns:150px minmax(0,1fr)}
+@media (max-width:560px){.edu li{grid-template-columns:minmax(0,1fr);gap:0}}

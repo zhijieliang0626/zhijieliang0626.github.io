@@ -15,7 +15,8 @@ const T = {
     lead_about:"A short introduction.", lead_research:"Topics in condensed matter physics that I am interested in.",
     lead_interests:"Things I enjoy outside of physics. Click a card to see my photos.", lead_notes:"Notes I made for courses at Osaka University. Click to open the PDF.", lead_photos:"Photos I took.",
     notes_empty:"No notes uploaded yet.", notes_empty2:"Lecture notes will be added here soon.", photos_empty:"No photos in this album yet.", photos_empty2:"Photos will be added here soon.", view:"View photos →", back:"← Back to Interests", close:"Close", lead_contact:"Feel free to contact me by email. Replace (at) with @.",
-    about_bio:"I was born in China and now study physics at Osaka University. My main interest is condensed matter physics, in particular how materials behave at very low temperatures.",
+    about_bio:"I am from Suzhou, Jiangsu, China. I came to Japan in 2022 and now study physics at Osaka University. My main interest is condensed matter physics, in particular how materials behave at very low temperatures.",
+    h_edu:"Education", edu:[["2027.04 –","Department of Basic Science, Department of Multidisciplinary Sciences, Graduate School of Arts and Sciences, The University of Tokyo"],["2023.04 – 2027.03","Department of Physics, School of Science, Osaka University"],["2022.10 – 2023.03","Center for Japanese Language and Culture (CJLC), Osaka University"]], l_from:"Hometown", from:"Suzhou, Jiangsu, China",
     l_name:"Name", l_aff:"Affiliation", l_campus:"Campus", l_mail:"Email",
     aff:"Department of Physics, School of Science, Osaka University", campus:"Toyonaka Campus, Osaka University",
     topics:[
@@ -40,7 +41,8 @@ const T = {
     lead_about:"簡単な自己紹介です。", lead_research:"物性物理の中で、興味を持っているテーマです。",
     lead_interests:"物理以外で好きなこと。カードを押すと写真が見られます。", lead_notes:"大阪大学の授業で作成したノートです。クリックすると PDF が開きます。", lead_photos:"自分で撮った写真です。",
     notes_empty:"まだノートはありません。", notes_empty2:"講義ノートは近日追加予定です。", photos_empty:"このアルバムにはまだ写真がありません。", photos_empty2:"近日追加予定です。", view:"写真を見る →", back:"← 趣味に戻る", close:"閉じる", lead_contact:"ご連絡はメールでお願いします。(at) を @ に置き換えてください。",
-    about_bio:"中国出身で、現在は大阪大学で物理学を学んでいます。主な関心は物性物理で、特に極低温での物質のふるまいに興味があります。",
+    about_bio:"中国江蘇省蘇州市の出身です。2022年に来日し、現在は大阪大学で物理学を学んでいます。主な関心は物性物理で、特に極低温での物質のふるまいに興味があります。",
+    h_edu:"学歴", edu:[["2027.04 –","東京大学大学院 総合文化研究科 広域科学専攻 相関基礎科学系"],["2023.04 – 2027.03","大阪大学 理学部 物理学科"],["2022.10 – 2023.03","大阪大学 日本語日本文化教育センター（CJLC）"]], l_from:"出身", from:"中国 江蘇省 蘇州市",
     l_name:"氏名", l_aff:"所属", l_campus:"キャンパス", l_mail:"メール",
     aff:"大阪大学 理学部 物理学科", campus:"大阪大学 豊中キャンパス",
     topics:[
@@ -65,7 +67,8 @@ const T = {
     lead_about:"关于我的简单介绍。", lead_research:"我在凝聚态物理中感兴趣的方向。",
     lead_interests:"物理之外喜欢的事情。点击卡片可以看我拍的照片。", lead_notes:"我在大阪大学上课时整理的笔记，点击即可打开 PDF。", lead_photos:"我自己拍的照片。",
     notes_empty:"还没有上传笔记。", notes_empty2:"讲义笔记会陆续放在这里。", photos_empty:"这个相册还没有照片。", photos_empty2:"照片会陆续放在这里。", view:"查看照片 →", back:"← 返回兴趣", close:"关闭", lead_contact:"欢迎通过邮件联系我，请把 (at) 换成 @。",
-    about_bio:"我来自中国，目前在大阪大学学习物理。主要关注凝聚态物理，尤其是物质在极低温下的行为。",
+    about_bio:"我来自中国江苏苏州，2022 年来到日本，目前在大阪大学学习物理。主要关注凝聚态物理，尤其是物质在极低温下的行为。",
+    h_edu:"学习经历", edu:[["2027.04 –","东京大学 研究生院 综合文化研究科 广域科学专攻 相关基础科学系"],["2023.04 – 2027.03","大阪大学 理学部 物理学科"],["2022.10 – 2023.03","大阪大学 日本语日本文化教育中心（CJLC）"]], l_from:"来自", from:"中国 江苏 苏州",
     l_name:"姓名", l_aff:"所属", l_campus:"校区", l_mail:"邮箱",
     aff:"大阪大学 理学部 物理学科", campus:"大阪大学 丰中校区",
     topics:[
@@ -132,6 +135,7 @@ function setLang(l){
         return `<li><span class="term">${esc(n.term||"")}</span><span class="nt">${esc(t)}<span class="nc">${esc(n.course||"")}</span></span><a class="pdf" href="${esc(n.file)}" target="_blank" rel="noopener">PDF ↗</a></li>`; }).join("")}</ul>`
     : empty(d.notes_empty, d.notes_empty2);
   if($("gallery")) renderPhotos(d);
+  if($("eduList")) $("eduList").innerHTML = d.edu.map(([t,s]) => `<li><time>${t}</time><span>${esc(s)}</span></li>`).join("");
   if($("newsList")) $("newsList").innerHTML = d.news.map(([t,s]) => `<li><time>${t}</time><span>${esc(s)}</span></li>`).join("");
   const page = document.body.dataset.page;
   document.title = page === "home" ? names[l] : `${d["t_"+page] || ""} | ${names[l]}`;
