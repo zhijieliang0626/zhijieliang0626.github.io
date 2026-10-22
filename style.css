@@ -213,3 +213,31 @@ footer time{font-family:var(--mono)}
 .mails .mail{overflow-wrap:anywhere;min-width:0}
 .mails .copy{margin-left:0}
 .mails{gap:12px}
+
+/* 合集封面 + 按时间排列的照片 */
+.coll-hero{position:relative;margin-top:4px;border-radius:20px;overflow:hidden;background:var(--tile-b);aspect-ratio:21/9;max-width:100%}
+.coll-hero img{display:block;width:100%;height:100%;object-fit:cover}
+.coll-hero-text{position:absolute;inset:auto 0 0 0;padding:72px 28px 24px;display:flex;flex-direction:column;gap:8px;color:#fff;
+  background:linear-gradient(to top,rgba(6,8,12,.82),rgba(6,8,12,0))}
+.coll-hero-text .eyebrow{color:rgba(255,255,255,.8)}
+.coll-hero-text .page-title{color:#fff}
+.coll-hero-text .coll-meta{color:rgba(255,255,255,.78)}
+.coll-hero-text .coll-meta span+span::before{color:rgba(255,255,255,.4)}
+@media (max-width:640px){.coll-hero{aspect-ratio:4/3}.coll-hero-text{padding:56px 18px 16px}}
+#gallery{gap:44px!important}
+.day{display:flex;flex-direction:column;gap:14px}
+.day-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.day-date{font:500 22px/1 var(--mono);color:var(--accent);font-variant-numeric:tabular-nums}
+.day-name{font-weight:600}
+.day-count{font:12px var(--mono);color:var(--muted);margin-left:auto}
+.jgrid{display:flex;flex-wrap:wrap;gap:8px}
+.jgrid figure{flex-grow:var(--r);flex-basis:calc(var(--r) * 200px);min-width:0;margin:0!important;gap:6px!important}
+.jgrid figure button{aspect-ratio:var(--r);border-radius:8px!important}
+.jgrid figure img{height:100%!important;object-fit:cover}
+.jgrid .jfill{flex-grow:10;flex-basis:0}
+@media (max-width:640px){.jgrid figure{flex-basis:calc(var(--r) * 130px)}}
+.jgrid{gap:6px}
+.jgrid figure{flex-basis:calc(var(--r) * 140px)}
+.jgrid figcaption{font-size:12px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:640px){.jgrid figure{flex-basis:calc(var(--r) * 82px)}.jgrid{gap:4px}}
+.coll-hero img{object-position:center 60%}

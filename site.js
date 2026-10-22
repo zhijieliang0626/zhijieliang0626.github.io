@@ -141,6 +141,163 @@ const ALBUMS = {
       {f:"sg2026-09", w:900, h:601, cap:"Ferrari · #44"},
       {f:"sg2026-10", w:900, h:600, cap:"Ferrari · #44"},
       {f:"sg2026-11", w:900, h:770, cap:"Haas"},
+      ] },
+    { id:"f1-suzuka-2026", dir:"photos/f1/suzuka-2026", date:"2026.03.27–29", cover:"suzuka-2026-040",
+      title:{en:"2026 Japanese Grand Prix", ja:"2026 F1 日本グランプリ", zh:"2026 F1 日本大奖赛"},
+      place:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"},
+      days:{fri:{date:"3.27", en:"Friday · Practice", ja:"金曜日 · フリー走行", zh:"周五 · 练习赛"},
+             sat:{date:"3.28", en:"Saturday · Qualifying day", ja:"土曜日 · 予選日", zh:"周六 · 排位赛日"},
+             sun:{date:"3.29", en:"Sunday · Race day", ja:"日曜日 · 決勝日", zh:"周日 · 正赛日"}},
+      photos:[
+        {f:"suzuka-2026-001", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-002", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-003", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-004", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-005", w:587, h:900, day:"fri"},
+        {f:"suzuka-2026-006", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-007", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-008", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-009", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-010", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-011", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-012", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-013", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-014", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-015", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-016", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-017", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-018", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-019", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-020", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-021", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-022", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-023", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-024", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-025", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-026", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-027", w:900, h:476, day:"fri"},
+        {f:"suzuka-2026-028", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-029", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-030", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-031", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-032", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-033", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-034", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-035", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-036", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-037", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-038", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-039", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-040", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-041", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-042", w:900, h:785, day:"fri"},
+        {f:"suzuka-2026-043", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-044", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-045", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-046", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-047", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-048", w:900, h:779, day:"fri"},
+        {f:"suzuka-2026-049", w:900, h:678, day:"fri"},
+        {f:"suzuka-2026-050", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-051", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-052", w:900, h:577, day:"fri"},
+        {f:"suzuka-2026-053", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-054", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-055", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-056", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-057", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-058", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-059", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-060", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-061", w:900, h:591, day:"fri"},
+        {f:"suzuka-2026-062", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-063", w:900, h:411, day:"fri"},
+        {f:"suzuka-2026-064", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-065", w:900, h:600, day:"fri"},
+        {f:"suzuka-2026-066", w:900, h:471, day:"fri"},
+        {f:"suzuka-2026-067", w:900, h:760, day:"fri"},
+        {f:"suzuka-2026-068", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-069", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-070", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-071", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-072", w:600, h:900, day:"sat"},
+        {f:"suzuka-2026-073", w:600, h:900, day:"sat"},
+        {f:"suzuka-2026-074", w:900, h:403, day:"sat"},
+        {f:"suzuka-2026-075", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-076", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-077", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-078", w:900, h:444, day:"sat"},
+        {f:"suzuka-2026-079", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-080", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-081", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-082", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-083", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-084", w:900, h:466, day:"sat"},
+        {f:"suzuka-2026-085", w:900, h:600, day:"sat"},
+        {f:"suzuka-2026-086", w:900, h:501, day:"sat"},
+        {f:"suzuka-2026-087", w:900, h:468, day:"sat"},
+        {f:"suzuka-2026-088", w:900, h:508, day:"sat"},
+        {f:"suzuka-2026-089", w:900, h:518, day:"sat"},
+        {f:"suzuka-2026-090", w:496, h:900, day:"sat"},
+        {f:"suzuka-2026-091", w:431, h:900, day:"sat"},
+        {f:"suzuka-2026-092", w:446, h:900, day:"sat"},
+        {f:"suzuka-2026-093", w:900, h:506, day:"sun"},
+        {f:"suzuka-2026-094", w:900, h:600, day:"sun"},
+        {f:"suzuka-2026-095", w:900, h:600, day:"sun"},
+        {f:"suzuka-2026-096", w:600, h:900, day:"sun"},
+        {f:"suzuka-2026-097", w:600, h:900, day:"sun"},
+        {f:"suzuka-2026-098", w:600, h:900, day:"sun"},
+        {f:"suzuka-2026-099", w:600, h:900, day:"sun"},
+        {f:"suzuka-2026-100", w:900, h:600, day:"sun"},
+        {f:"suzuka-2026-101", w:600, h:900, day:"sun"},
+        {f:"suzuka-2026-102", w:900, h:758, day:"sun"},
+        {f:"suzuka-2026-103", w:900, h:600, day:"sun"},
+        {f:"suzuka-2026-104", w:900, h:835, day:"sun"},
+        {f:"suzuka-2026-105", w:900, h:600, day:"sun"},
+        {f:"suzuka-2026-106", w:900, h:600, day:"sun"},
+        {f:"suzuka-2026-107", w:900, h:600, day:"sun"},
+      ] },
+    { id:"f1-suzuka-2022-2025", dir:"photos/f1/suzuka-2022-2025", date:"2022–2025", cover:"suzuka-2022-2025-030",
+      title:{en:"Suzuka 2022–2025", ja:"鈴鹿 2022–2025", zh:"铃鹿 2022–2025"},
+      place:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"},
+      photos:[
+        {f:"suzuka-2022-2025-001", w:900, h:600, cap:"Aston Martin · #14 Fernando Alonso"},
+        {f:"suzuka-2022-2025-002", w:900, h:600, cap:"Haas · #87 Oliver Bearman"},
+        {f:"suzuka-2022-2025-003", w:900, h:600, cap:"Red Bull Racing · #1 Max Verstappen"},
+        {f:"suzuka-2022-2025-004", w:900, h:600, cap:"Red Bull Racing · #1 Max Verstappen"},
+        {f:"suzuka-2022-2025-005", w:900, h:600, cap:"Racing Bulls · #6 Isack Hadjar"},
+        {f:"suzuka-2022-2025-006", w:900, h:600, cap:"Racing Bulls · #6 Isack Hadjar"},
+        {f:"suzuka-2022-2025-007", w:900, h:600, cap:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"}},
+        {f:"suzuka-2022-2025-008", w:900, h:600, cap:"Haas · #87 Oliver Bearman"},
+        {f:"suzuka-2022-2025-009", w:900, h:600, cap:"Mercedes · #63 George Russell"},
+        {f:"suzuka-2022-2025-010", w:900, h:600, cap:"Mercedes · #63 George Russell"},
+        {f:"suzuka-2022-2025-011", w:900, h:600, cap:"Mercedes · #63 George Russell"},
+        {f:"suzuka-2022-2025-012", w:900, h:600, cap:"Mercedes · #63 George Russell"},
+        {f:"suzuka-2022-2025-013", w:900, h:600, cap:"Williams · #55 Carlos Sainz"},
+        {f:"suzuka-2022-2025-014", w:900, h:600, cap:"Williams · #55 Carlos Sainz"},
+        {f:"suzuka-2022-2025-015", w:900, h:600, cap:"Williams · #55 Carlos Sainz"},
+        {f:"suzuka-2022-2025-016", w:900, h:600, cap:"Williams · #55 Carlos Sainz"},
+        {f:"suzuka-2022-2025-017", w:900, h:600, cap:"Haas · #87 Oliver Bearman"},
+        {f:"suzuka-2022-2025-018", w:900, h:600, cap:"Haas · #87 Oliver Bearman"},
+        {f:"suzuka-2022-2025-019", w:900, h:600, cap:"Red Bull Racing · #22 Yuki Tsunoda"},
+        {f:"suzuka-2022-2025-020", w:900, h:600, cap:"Red Bull Racing · #22 Yuki Tsunoda"},
+        {f:"suzuka-2022-2025-021", w:900, h:600, cap:"Red Bull Racing · #22 Yuki Tsunoda"},
+        {f:"suzuka-2022-2025-022", w:900, h:600, cap:"Red Bull Racing · #22 Yuki Tsunoda"},
+        {f:"suzuka-2022-2025-023", w:900, h:600, cap:"Ferrari · #16 Charles Leclerc"},
+        {f:"suzuka-2022-2025-024", w:900, h:600, cap:"Ferrari · #16 Charles Leclerc"},
+        {f:"suzuka-2022-2025-025", w:900, h:600, cap:"Ferrari · #16 Charles Leclerc"},
+        {f:"suzuka-2022-2025-026", w:900, h:600, cap:"Ferrari · #16 Charles Leclerc"},
+        {f:"suzuka-2022-2025-027", w:900, h:600, cap:"Red Bull Racing · #22 Yuki Tsunoda"},
+        {f:"suzuka-2022-2025-028", w:900, h:600, cap:"Williams · #23 Alex Albon"},
+        {f:"suzuka-2022-2025-029", w:900, h:600, cap:"Williams · #23 Alex Albon"},
+        {f:"suzuka-2022-2025-030", w:900, h:600, cap:"Ferrari · #44 Lewis Hamilton"},
+        {f:"suzuka-2022-2025-031", w:900, h:600, cap:"Ferrari · #44 Lewis Hamilton"},
+        {f:"suzuka-2022-2025-032", w:900, h:600, cap:"Ferrari · #44 Lewis Hamilton"},
+        {f:"suzuka-2022-2025-033", w:900, h:600, cap:"Ferrari · #44 Lewis Hamilton"},
+        {f:"suzuka-2022-2025-034", w:900, h:600, cap:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"}},
+        {f:"suzuka-2022-2025-035", w:900, h:600, cap:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"}},
+        {f:"suzuka-2022-2025-036", w:900, h:600, cap:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"}},
+        {f:"suzuka-2022-2025-037", w:900, h:600, cap:{en:"Suzuka Circuit", ja:"鈴鹿サーキット", zh:"铃鹿赛道"}},
       ] }
   ],
   travel: [
@@ -167,14 +324,24 @@ function renderPhotos(d){
   const albumName = k => (d.hobbies.find(x => x[0] === k) || [])[2] || k;
   const count = n => d.count.replace("{n}", n);
   if(coll){
-    shown = coll.photos.map((p,i) => ({src:`${coll.dir}/${p.f}.jpg`, cap:pick(p.cap,l), n:i+1}));
-    const th = p => `${coll.dir}/${p.f}-thumb.jpg`;
-    const fig = (p,i,cls) => `<figure class="${cls}"><button type="button" data-i-photo="${i}" aria-label="${esc(pick(p.cap,l))}"><img src="${esc(i===0 ? `${coll.dir}/${p.f}.jpg` : th(p))}" width="${p.w}" height="${p.h}" alt="${esc(pick(p.cap,l))}" ${i?'loading="lazy"':''}></button><figcaption><span class="num">${String(i+1).padStart(2,"0")}</span>${esc(pick(p.cap,l))}</figcaption></figure>`;
+    const capOf = p => p.cap ? pick(p.cap,l) : (p.day && coll.days ? `${coll.days[p.day].date} · ${pick(coll.days[p.day],l)}` : "");
+    shown = coll.photos.map((p,i) => ({src:`${coll.dir}/${p.f}.jpg`, cap:capOf(p), n:i+1}));
+    const cov = coll.photos.find(p => p.f === coll.cover) || coll.photos[0];
+    const tile = (p,i) => `<figure style="--r:${(p.w/p.h).toFixed(3)}"><button type="button" data-i-photo="${i}" aria-label="${esc(capOf(p) || pick(coll.title,l))}"><img src="${esc(`${coll.dir}/${p.f}-thumb.jpg`)}" width="${p.w}" height="${p.h}" alt="${esc(capOf(p))}" loading="lazy"></button>${p.cap ? `<figcaption><span class="num">${String(i+1).padStart(2,"0")}</span>${esc(pick(p.cap,l))}</figcaption>` : ""}</figure>`;
+    const rows = list => `<div class="jgrid">${list.map(([p,i]) => tile(p,i)).join("")}<span class="jfill" aria-hidden="true"></span></div>`;
+    const indexed = coll.photos.map((p,i) => [p,i]);
+    let body;
+    if(coll.days){
+      body = Object.keys(coll.days).map(k => { const part = indexed.filter(([p]) => p.day === k); if(!part.length) return "";
+        const dd = coll.days[k];
+        return `<section class="day"><header class="day-head"><span class="day-date">${esc(dd.date)}</span><span class="day-name">${esc(pick(dd,l))}</span><span class="day-count">${esc(count(part.length))}</span></header>${rows(part)}</section>`; }).join("");
+    } else body = rows(indexed);
     $("photoHead").innerHTML = `<a class="back" href="#${album}">← ${esc(albumName(album))}</a>
-      <span class="eyebrow">${esc(albumName(album))}</span>
-      <h1 class="page-title">${esc(pick(coll.title,l))}</h1>
-      <p class="coll-meta"><span>${esc(pick(coll.place,l))}</span><span>${esc(coll.date)}</span><span>${esc(count(coll.photos.length))}</span></p>`;
-    $("gallery").innerHTML = fig(coll.photos[0],0,"lead-photo") + `<div class="masonry">${coll.photos.slice(1).map((p,i) => fig(p,i+1,"")).join("")}</div>`;
+      <div class="coll-hero"><img src="${esc(`${coll.dir}/${cov.f}.jpg`)}" alt="" width="${cov.w}" height="${cov.h}">
+        <div class="coll-hero-text"><span class="eyebrow">${esc(albumName(album))}</span>
+        <h1 class="page-title">${esc(pick(coll.title,l))}</h1>
+        <p class="coll-meta"><span>${esc(pick(coll.place,l))}</span><span>${esc(coll.date)}</span><span>${esc(count(coll.photos.length))}</span></p></div></div>`;
+    $("gallery").innerHTML = body;
     document.title = `${pick(coll.title,l)} | ${names[l]}`;
     return;
   }
@@ -185,9 +352,9 @@ function renderPhotos(d){
     <p class="lead">${esc(d.lead_photos)}</p>
     <nav class="albums" aria-label="Albums">${keys.map(k => `<a href="#${k}" aria-current="${k===album}">${esc(albumName(k))}</a>`).join("")}</nav>`;
   $("gallery").innerHTML = list.length
-    ? `<ul class="collections">${list.map(c => { const p = c.photos[0]; return `<li><a href="#${c.id}">
+    ? `<ul class="collections">${list.map(c => { const p = c.photos.find(x => x.f === c.cover) || c.photos[0]; return `<li><a href="#${c.id}">
         <img src="${esc(`${c.dir}/${p.f}-thumb.jpg`)}" alt="" width="${p.w}" height="${p.h}">
-        <span class="info"><span class="t">${esc(pick(c.title,l))}</span><span class="m">${esc(pick(c.place,l))} · ${esc(count(c.photos.length))}</span></span></a></li>`; }).join("")}</ul>`
+        <span class="info"><span class="t">${esc(pick(c.title,l))}</span><span class="m">${esc(pick(c.place,l))} · ${esc(c.date)} · ${esc(count(c.photos.length))}</span></span></a></li>`; }).join("")}</ul>`
     : empty(d.photos_empty, d.photos_empty2) + `<div class="slots" aria-hidden="true"><span></span><span></span><span></span></div>`;
 }
 let cur = "en";
