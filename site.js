@@ -3,11 +3,12 @@ const names = {en:"LIANG Zhijie", ja:"梁 志杰", zh:"梁志杰"};
 const kana = "りょう しけつ";
 const T = {
   en:{
+    g_report:"Reports", g_report_sub:"Reports from fieldwork and courses.", g_article:"Articles", g_article_sub:"Short pieces I have written.", art_empty:"No articles yet.", st_report:"Report",
     mail_lab:"Lab", mail_uni:"University", 
     g_self:"Study notes", g_self_sub:"Typeset in LaTeX. Drafts are updated as I write.", g_course:"Course notes", g_course_sub:"Handwritten notes from my courses at Osaka University.", st_course:"Handwritten", term_s:"Spring–Summer", term_a:"Autumn–Winter", 
     st_draft:"Draft", st_done:"Complete", written_in:"In", pages:"{n} pages", langname:{zh:"Chinese", ja:"Japanese", en:"English"}, notes_note:"Notes still in progress are marked Draft and updated as I write.", 
     count:"{n} photos", 
-    nav_home:"Home", nav_about:"About Me", nav_research:"Research", nav_notes:"Notes", nav_interests:"Interests", nav_contact:"Contact",
+    nav_home:"Home", nav_about:"About Me", nav_research:"Research", nav_notes:"Reports & Notes", nav_interests:"Interests", nav_contact:"Contact",
     eyebrow:"Physics · Osaka University",
     position:"Undergraduate student, Department of Physics, School of Science, Osaka University",
     home_bio:"I am an undergraduate student in the Department of Physics at Osaka University, Japan. I am interested in condensed matter physics, especially superconductors, quasicrystals, and low-temperature physics.",
@@ -15,9 +16,9 @@ const T = {
     fig:"Meissner effect: below Tc, a superconductor expels the magnetic field.",
     h_intro:"Introduction", h_research:"Research", h_news:"What's new", h_contact:"Contact", h_profile:"Profile", h_hobbies:"Hobbies", h_topics:"Topics",
     more_about:"More about me →", more_research:"Research interests →", more_contact:"Contact details →",
-    t_about:"About Me", t_research:"Research", t_notes:"Notes", t_photos:"Photos", t_interests:"Interests", t_contact:"Contact",
+    t_about:"About Me", t_research:"Research", t_notes:"Reports · Articles · Notes", t_photos:"Photos", t_interests:"Interests", t_contact:"Contact",
     lead_about:"A short introduction.", lead_research:"Topics in condensed matter physics that I am interested in.",
-    lead_interests:"Things I enjoy outside of physics. Click a card to see my photos.", lead_notes:"Notes from my courses and my own study. Click PDF to open.", lead_photos:"Photos I took.",
+    lead_interests:"Things I enjoy outside of physics. Click a card to see my photos.", lead_notes:"Reports, articles and notes from my study. Click PDF to open.", lead_photos:"Photos I took.",
     notes_empty:"No notes uploaded yet.", notes_empty2:"Lecture notes will be added here soon.", photos_empty:"No photos in this album yet.", photos_empty2:"Photos will be added here soon.", view:"View photos →", back:"← Back to Interests", close:"Close", lead_contact:"Feel free to contact me by email. Replace (at) with @.",
     about_bio:"I am from Suzhou, Jiangsu, China. I came to Japan in 2022 and now study physics at Osaka University. My main interest is condensed matter physics, in particular how materials behave at very low temperatures.",
     h_edu:"Education", edu:[["2027.04 –","Department of Basic Science, Department of Multidisciplinary Sciences, Graduate School of Arts and Sciences, The University of Tokyo"],["2023.04 – 2027.03","Department of Physics, School of Science, Osaka University"],["2022.10 – 2023.03","Center for Japanese Language and Culture (CJLC), Osaka University"]], l_from:"Hometown", from:"Suzhou, Jiangsu, China",
@@ -33,11 +34,12 @@ const T = {
     updated:"Last updated", copy:"Copy", copied:"Copied"
   },
   ja:{
+    g_report:"レポート", g_report_sub:"実習や授業で書いたレポートです。", g_article:"記事", g_article_sub:"書いた文章です。", art_empty:"まだ記事はありません。", st_report:"レポート",
     mail_lab:"研究室", mail_uni:"学生用", 
     g_self:"自習ノート", g_self_sub:"LaTeX で書いています。「執筆中」のものは随時更新します。", g_course:"講義ノート", g_course_sub:"大阪大学の授業で取った手書きのノートです。", st_course:"手書き", term_s:"春夏", term_a:"秋冬", 
     st_draft:"執筆中", st_done:"完成", written_in:"言語：", pages:"{n} ページ", langname:{zh:"中国語", ja:"日本語", en:"英語"}, notes_note:"「執筆中」のノートは書き進めながら随時更新しています。", 
     count:"{n} 枚", 
-    nav_home:"ホーム", nav_about:"自己紹介", nav_research:"研究", nav_notes:"ノート", nav_interests:"趣味", nav_contact:"連絡先",
+    nav_home:"ホーム", nav_about:"自己紹介", nav_research:"研究", nav_notes:"レポート・ノート", nav_interests:"趣味", nav_contact:"連絡先",
     eyebrow:"物理学 · 大阪大学",
     position:"大阪大学 理学部 物理学科 学部生",
     home_bio:"大阪大学理学部物理学科の学部生です。物性物理、特に超伝導体、準結晶、低温物理に興味を持っています。",
@@ -45,9 +47,9 @@ const T = {
     fig:"マイスナー効果：Tc 以下で超伝導体は磁場を排除する。",
     h_intro:"はじめに", h_research:"研究", h_news:"お知らせ", h_contact:"連絡先", h_profile:"プロフィール", h_hobbies:"趣味", h_topics:"テーマ",
     more_about:"自己紹介へ →", more_research:"研究の詳細へ →", more_contact:"連絡先の詳細へ →",
-    t_about:"自己紹介", t_research:"研究", t_notes:"ノート", t_photos:"写真", t_interests:"趣味", t_contact:"連絡先",
+    t_about:"自己紹介", t_research:"研究", t_notes:"レポート · 記事 · ノート", t_photos:"写真", t_interests:"趣味", t_contact:"連絡先",
     lead_about:"簡単な自己紹介です。", lead_research:"物性物理の中で、興味を持っているテーマです。",
-    lead_interests:"物理以外で好きなこと。カードを押すと写真が見られます。", lead_notes:"授業や自習で書いたノートです。PDF をクリックすると開きます。", lead_photos:"自分で撮った写真です。",
+    lead_interests:"物理以外で好きなこと。カードを押すと写真が見られます。", lead_notes:"レポート、記事、勉強ノートです。PDF をクリックすると開きます。", lead_photos:"自分で撮った写真です。",
     notes_empty:"まだノートはありません。", notes_empty2:"講義ノートは近日追加予定です。", photos_empty:"このアルバムにはまだ写真がありません。", photos_empty2:"近日追加予定です。", view:"写真を見る →", back:"← 趣味に戻る", close:"閉じる", lead_contact:"ご連絡はメールでお願いします。(at) を @ に置き換えてください。",
     about_bio:"中国江蘇省蘇州市の出身です。2022年に来日し、現在は大阪大学で物理学を学んでいます。主な関心は物性物理で、特に極低温での物質のふるまいに興味があります。",
     h_edu:"学歴", edu:[["2027.04 –","東京大学大学院 総合文化研究科 広域科学専攻 相関基礎科学系"],["2023.04 – 2027.03","大阪大学 理学部 物理学科"],["2022.10 – 2023.03","大阪大学 日本語日本文化教育センター（CJLC）"]], l_from:"出身", from:"中国 江蘇省 蘇州市",
@@ -63,11 +65,12 @@ const T = {
     updated:"最終更新", copy:"コピー", copied:"コピーしました"
   },
   zh:{
+    g_report:"报告", g_report_sub:"实习和课程中写的报告。", g_article:"文章", g_article_sub:"我写的文章。", art_empty:"暂时还没有文章。", st_report:"报告",
     mail_lab:"研究室", mail_uni:"学校", 
     g_self:"自学笔记", g_self_sub:"用 LaTeX 写的笔记，“编写中”的会随时更新。", g_course:"课程笔记", g_course_sub:"在大阪大学上课时的手写笔记。", st_course:"手写", term_s:"春夏学期", term_a:"秋冬学期", 
     st_draft:"编写中", st_done:"已完成", written_in:"语言：", pages:"{n} 页", langname:{zh:"中文", ja:"日语", en:"英语"}, notes_note:"标为“编写中”的笔记还在写，会随时更新。", 
     count:"{n} 张照片", 
-    nav_home:"主页", nav_about:"自我介绍", nav_research:"研究", nav_notes:"笔记", nav_interests:"兴趣", nav_contact:"联系方式",
+    nav_home:"主页", nav_about:"自我介绍", nav_research:"研究", nav_notes:"报告与笔记", nav_interests:"兴趣", nav_contact:"联系方式",
     eyebrow:"物理学 · 大阪大学",
     position:"大阪大学 理学部 物理学科 本科生",
     home_bio:"我是日本大阪大学理学部物理学科的本科生，对凝聚态物理感兴趣，特别是超导体、准晶和低温物理。",
@@ -75,9 +78,9 @@ const T = {
     fig:"迈斯纳效应：在 Tc 以下，超导体会把磁场排出体外。",
     h_intro:"简介", h_research:"研究", h_news:"动态", h_contact:"联系方式", h_profile:"基本信息", h_hobbies:"兴趣", h_topics:"方向",
     more_about:"查看自我介绍 →", more_research:"查看研究兴趣 →", more_contact:"查看联系方式 →",
-    t_about:"自我介绍", t_research:"研究", t_notes:"笔记", t_photos:"照片", t_interests:"兴趣", t_contact:"联系方式",
+    t_about:"自我介绍", t_research:"研究", t_notes:"报告 · 文章 · 笔记", t_photos:"照片", t_interests:"兴趣", t_contact:"联系方式",
     lead_about:"关于我的简单介绍。", lead_research:"我在凝聚态物理中感兴趣的方向。",
-    lead_interests:"物理之外喜欢的事情。点击卡片可以看我拍的照片。", lead_notes:"上课和自学时整理的笔记，点击 PDF 即可打开。", lead_photos:"我自己拍的照片。",
+    lead_interests:"物理之外喜欢的事情。点击卡片可以看我拍的照片。", lead_notes:"我写的报告、文章和学习笔记，点击 PDF 即可打开。", lead_photos:"我自己拍的照片。",
     notes_empty:"还没有上传笔记。", notes_empty2:"讲义笔记会陆续放在这里。", photos_empty:"这个相册还没有照片。", photos_empty2:"照片会陆续放在这里。", view:"查看照片 →", back:"← 返回兴趣", close:"关闭", lead_contact:"欢迎通过邮件联系我，请把 (at) 换成 @。",
     about_bio:"我来自中国江苏苏州，2022 年来到日本，目前在大阪大学学习物理。主要关注凝聚态物理，尤其是物质在极低温下的行为。",
     h_edu:"学习经历", edu:[["2027.04 –","东京大学 研究生院 综合文化研究科 广域科学专攻 相关基础科学系"],["2023.04 – 2027.03","大阪大学 理学部 物理学科"],["2022.10 – 2023.03","大阪大学 日本语日本文化教育中心（CJLC）"]], l_from:"来自", from:"中国 江苏 苏州",
@@ -95,6 +98,11 @@ const T = {
 };
 /* ===== 笔记：PDF 放在 notes 文件夹。status 填 "draft"（编写中）或 "done"（完成） ===== */
 const NOTES = [
+  /* 报告 */
+  { kind:"report", file:"reports/fukushima-field-report-2023.pdf", date:"2023.09", pages:5, lang:"en",
+    title:{en:"Radiation Measurements in Futaba, Fukushima", ja:"福島県双葉町における放射線測定", zh:"福岛县双叶町的辐射测量"},
+    topics:{en:"Fukushima Hamadori environmental radiation training course, Osaka University",
+            ja:"大阪大学 福島浜通り 環境放射線研修", zh:"大阪大学 福岛滨通环境辐射研修"} },
   /* 自学笔记（LaTeX，编写中） */
   { kind:"self", file:"notes/superconductor-notes.pdf", status:"draft", updated:"2026.09.28", pages:16, lang:"ja",
     title:{en:"Superconductivity Notes", ja:"超伝導ノート", zh:"超导笔记"},
@@ -443,12 +451,13 @@ function setLang(l){
   if($("notes")){
     const termName = t => t ? t.replace(/ S$/, " " + d.term_s).replace(/ A$/, " " + d.term_a) : "";
     const row = n => {
-      const meta = [n.term ? termName(n.term) : "", `${d.written_in} ${d.langname[n.lang]||n.lang}`, d.pages.replace("{n}", n.pages), n.updated ? `${d.updated} ${n.updated}` : ""].filter(Boolean).join(" · ");
-      const badge = n.kind === "self" ? `<span class="nstatus ${n.status}">${esc(n.status === "done" ? d.st_done : d.st_draft)}</span>` : `<span class="nstatus course">${esc(d.st_course)}</span>`;
+      const meta = [n.term ? termName(n.term) : "", n.date || "", `${d.written_in} ${d.langname[n.lang]||n.lang}`, d.pages.replace("{n}", n.pages), n.updated ? `${d.updated} ${n.updated}` : ""].filter(Boolean).join(" · ");
+      const badge = n.kind === "report" ? `<span class="nstatus course">${esc(d.st_report)}</span>` : n.kind === "self" ? `<span class="nstatus ${n.status}">${esc(n.status === "done" ? d.st_done : d.st_draft)}</span>` : `<span class="nstatus course">${esc(d.st_course)}</span>`;
       return `<li>${badge}<span class="nt">${esc(pick(n.title,l))}${n.topics ? `<span class="nc">${esc(pick(n.topics,l))}</span>` : ""}<span class="nm">${esc(meta)}</span></span><a class="pdf" href="${esc(n.file)}" target="_blank" rel="noopener">PDF ↗</a></li>`;
     };
     const group = (k, h, sub) => { const list = NOTES.filter(n => n.kind === k); return list.length ? `<section class="note-group"><h2>${esc(h)}</h2><div class="sec-body"><p class="group-lead">${esc(sub)}</p><ul class="notes">${list.map(row).join("")}</ul></div></section>` : ""; };
-    $("notes").innerHTML = NOTES.length ? group("self", d.g_self, d.g_self_sub) + group("course", d.g_course, d.g_course_sub) : empty(d.notes_empty, d.notes_empty2);
+    const articles = NOTES.filter(n => n.kind === "article").length ? group("article", d.g_article, d.g_article_sub) : `<section class="note-group"><h2>${esc(d.g_article)}</h2><div class="sec-body"><p class="group-lead">${esc(d.art_empty)}</p></div></section>`;
+    $("notes").innerHTML = group("report", d.g_report, d.g_report_sub) + articles + group("self", d.g_self, d.g_self_sub) + group("course", d.g_course, d.g_course_sub);
   }
   if($("eduList")) $("eduList").innerHTML = d.edu.map(([t,s]) => `<li><time>${t}</time><span>${esc(s)}</span></li>`).join("");
   if($("newsList")) $("newsList").innerHTML = d.news.map(([t,s]) => `<li><time>${t}</time><span>${esc(s)}</span></li>`).join("");
