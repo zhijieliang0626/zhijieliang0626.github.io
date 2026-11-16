@@ -301,8 +301,76 @@ const ALBUMS = {
       ] }
   ],
   travel: [
+    { id:"travel-all", flat:true, dir:"photos/travel/all", cover:"travel-046",
+      title:{en:"Travel", ja:"旅行", zh:"旅行"},
+      place:{en:"Japan · Taiwan · USA · Europe", ja:"日本 · 台湾 · アメリカ · ヨーロッパ", zh:"日本 · 台湾 · 美国 · 欧洲"},
+      photos:[
+        {f:"travel-001", w:900, h:522, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-002", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-003", w:583, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-004", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-005", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-006", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-007", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-008", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-009", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-010", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-011", w:600, h:900, cap:{en:"Kyoto", ja:"京都", zh:"京都"}},
+        {f:"travel-012", w:507, h:900, cap:{en:"Kyoto · Autumn leaves", ja:"京都 · 紅葉", zh:"京都 · 红叶"}},
+        {f:"travel-013", w:900, h:600, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-014", w:900, h:600, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-015", w:603, h:900, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-016", w:900, h:600, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-017", w:900, h:600, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-018", w:600, h:900, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-019", w:900, h:543, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-020", w:507, h:900, cap:{en:"Mt. Fuji · Hakone", ja:"富士山 · 箱根", zh:"富士山 · 箱根"}},
+        {f:"travel-021", w:507, h:900, cap:{en:"Sapporo", ja:"札幌", zh:"札幌"}},
+        {f:"travel-022", w:900, h:506, cap:{en:"Hokkaido", ja:"北海道", zh:"北海道"}},
+        {f:"travel-023", w:900, h:506, cap:{en:"Otaru", ja:"小樽", zh:"小樽"}},
+        {f:"travel-024", w:506, h:900, cap:{en:"Otaru", ja:"小樽", zh:"小樽"}},
+        {f:"travel-025", w:900, h:507, cap:{en:"Hokkaido", ja:"北海道", zh:"北海道"}},
+        {f:"travel-026", w:507, h:900, cap:{en:"San Francisco · Golden Gate", ja:"サンフランシスコ · ゴールデンゲートブリッジ", zh:"旧金山 · 金门大桥"}},
+        {f:"travel-027", w:900, h:506, cap:{en:"San Francisco · Golden Gate", ja:"サンフランシスコ · ゴールデンゲートブリッジ", zh:"旧金山 · 金门大桥"}},
+        {f:"travel-028", w:713, h:900, cap:{en:"San Francisco · Golden Gate", ja:"サンフランシスコ · ゴールデンゲートブリッジ", zh:"旧金山 · 金门大桥"}},
+        {f:"travel-029", w:900, h:507, cap:{en:"California · Pacific coast", ja:"カリフォルニア · 太平洋岸", zh:"加州 · 太平洋海岸"}},
+        {f:"travel-030", w:900, h:507, cap:{en:"California · Pacific coast", ja:"カリフォルニア · 太平洋岸", zh:"加州 · 太平洋海岸"}},
+        {f:"travel-031", w:900, h:507, cap:{en:"California · Pacific coast", ja:"カリフォルニア · 太平洋岸", zh:"加州 · 太平洋海岸"}},
+        {f:"travel-032", w:900, h:507, cap:{en:"California · Pacific coast", ja:"カリフォルニア · 太平洋岸", zh:"加州 · 太平洋海岸"}},
+        {f:"travel-033", w:900, h:507, cap:{en:"California · Pacific coast", ja:"カリフォルニア · 太平洋岸", zh:"加州 · 太平洋海岸"}},
+        {f:"travel-034", w:900, h:507, cap:{en:"Monterey", ja:"モントレー", zh:"蒙特雷"}},
+        {f:"travel-035", w:900, h:507, cap:{en:"Monterey", ja:"モントレー", zh:"蒙特雷"}},
+        {f:"travel-036", w:900, h:506, cap:{en:"Monterey", ja:"モントレー", zh:"蒙特雷"}},
+        {f:"travel-037", w:900, h:507, cap:{en:"Monterey · 17-Mile Drive", ja:"モントレー · 17マイル", zh:"蒙特雷 · 17英里"}},
+        {f:"travel-038", w:900, h:507, cap:{en:"Monterey · 17-Mile Drive", ja:"モントレー · 17マイル", zh:"蒙特雷 · 17英里"}},
+        {f:"travel-039", w:900, h:507, cap:{en:"Monterey · 17-Mile Drive", ja:"モントレー · 17マイル", zh:"蒙特雷 · 17英里"}},
+        {f:"travel-040", w:900, h:507, cap:{en:"Morro Bay", ja:"モロベイ", zh:"莫罗湾"}},
+        {f:"travel-041", w:900, h:507, cap:{en:"Morro Bay", ja:"モロベイ", zh:"莫罗湾"}},
+        {f:"travel-042", w:900, h:507, cap:{en:"Switzerland · Spiez", ja:"スイス · シュピーツ", zh:"瑞士 · 施皮茨"}},
+        {f:"travel-043", w:900, h:507, cap:{en:"Switzerland · Grindelwald", ja:"スイス · グリンデルワルト", zh:"瑞士 · 格林德瓦"}},
+        {f:"travel-044", w:900, h:507, cap:{en:"Switzerland · Grindelwald", ja:"スイス · グリンデルワルト", zh:"瑞士 · 格林德瓦"}},
+        {f:"travel-045", w:900, h:506, cap:{en:"Switzerland · Grindelwald", ja:"スイス · グリンデルワルト", zh:"瑞士 · 格林德瓦"}},
+        {f:"travel-046", w:900, h:507, cap:{en:"Switzerland · Grindelwald", ja:"スイス · グリンデルワルト", zh:"瑞士 · 格林德瓦"}},
+        {f:"travel-047", w:507, h:900, cap:{en:"Rome · Pantheon", ja:"ローマ · パンテオン", zh:"罗马 · 万神殿"}},
+        {f:"travel-048", w:900, h:507, cap:{en:"Florence", ja:"フィレンツェ", zh:"佛罗伦萨"}},
+        {f:"travel-049", w:900, h:507, cap:{en:"Florence", ja:"フィレンツェ", zh:"佛罗伦萨"}},
+        {f:"travel-050", w:900, h:507, cap:{en:"Florence", ja:"フィレンツェ", zh:"佛罗伦萨"}},
+        {f:"travel-051", w:507, h:900, cap:{en:"Taiwan · Qixingtan, Hualien", ja:"台湾 · 花蓮 七星潭", zh:"台湾 · 花莲 七星潭"}},
+        {f:"travel-052", w:900, h:675, cap:{en:"Tokyo", ja:"東京", zh:"东京"}},
+        {f:"travel-053", w:900, h:507, cap:{en:"Tokyo · Odaiba", ja:"東京 · お台場", zh:"东京 · 台场"}},
+        {f:"travel-054", w:900, h:675, cap:{en:"Tokyo · Odaiba", ja:"東京 · お台場", zh:"东京 · 台场"}},
+        {f:"travel-055", w:900, h:675, cap:{en:"Tokyo", ja:"東京", zh:"东京"}},
+        {f:"travel-056", w:900, h:675, cap:{en:"Snorkeling", ja:"シュノーケリング", zh:"浮潜"}},
+        {f:"travel-057", w:900, h:675, cap:{en:"Snorkeling", ja:"シュノーケリング", zh:"浮潜"}},
+      ] }
   ],
   cycling: [
+    { id:"cycling-all", flat:true, dir:"photos/cycling/all", cover:"cycling-001",
+      title:{en:"Cycling", ja:"サイクリング", zh:"骑行"},
+      place:{en:"Rides around Osaka", ja:"大阪周辺のライド", zh:"大阪周边骑行"},
+      photos:[
+        {f:"cycling-001", w:507, h:900, cap:{en:"Cherry blossoms", ja:"桜並木", zh:"樱花"}},
+      ] }
   ]
 };
 
@@ -321,6 +389,7 @@ function renderPhotos(d){
   let coll = null;
   for(const k of keys){ const c = (ALBUMS[k]||[]).find(c => c.id === h); if(c){ coll = c; album = k; } }
   if(!coll && keys.includes(h)) album = h;
+  if(!coll){ const L = ALBUMS[album] || []; if(L.length === 1 && L[0].flat) coll = L[0]; }
   const albumName = k => (d.hobbies.find(x => x[0] === k) || [])[2] || k;
   const count = n => d.count.replace("{n}", n);
   if(coll){
@@ -336,11 +405,11 @@ function renderPhotos(d){
         const dd = coll.days[k];
         return `<section class="day"><header class="day-head"><span class="day-date">${esc(dd.date)}</span><span class="day-name">${esc(pick(dd,l))}</span><span class="day-count">${esc(count(part.length))}</span></header>${rows(part)}</section>`; }).join("");
     } else body = rows(indexed);
-    $("photoHead").innerHTML = `<a class="back" href="#${album}">← ${esc(albumName(album))}</a>
+    $("photoHead").innerHTML = `${coll.flat ? `<a class="back" href="interests.html">${esc(d.back)}</a>` : `<a class="back" href="#${album}">← ${esc(albumName(album))}</a>`}
       <div class="coll-hero"><img src="${esc(`${coll.dir}/${cov.f}.jpg`)}" alt="" width="${cov.w}" height="${cov.h}">
-        <div class="coll-hero-text"><span class="eyebrow">${esc(albumName(album))}</span>
+        <div class="coll-hero-text">${coll.flat ? "" : `<span class="eyebrow">${esc(albumName(album))}</span>`}
         <h1 class="page-title">${esc(pick(coll.title,l))}</h1>
-        <p class="coll-meta"><span>${esc(pick(coll.place,l))}</span><span>${esc(coll.date)}</span><span>${esc(count(coll.photos.length))}</span></p></div></div>`;
+        <p class="coll-meta"><span>${esc(pick(coll.place,l))}</span>${coll.date ? `<span>${esc(coll.date)}</span>` : ""}<span>${esc(count(coll.photos.length))}</span></p></div></div>`;
     $("gallery").innerHTML = body;
     document.title = `${pick(coll.title,l)} | ${names[l]}`;
     return;
