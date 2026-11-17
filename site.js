@@ -3,9 +3,10 @@ const names = {en:"LIANG Zhijie", ja:"梁 志杰", zh:"梁志杰"};
 const kana = "りょう しけつ";
 const T = {
   en:{
+    st_typeset:"Typeset", 
     g_report:"Reports", g_report_sub:"Reports from fieldwork and courses.", g_article:"Articles", g_article_sub:"Short pieces I have written.", art_empty:"No articles yet.", st_report:"Report",
     mail_lab:"Lab", mail_uni:"University", 
-    g_self:"Study notes", g_self_sub:"Typeset in LaTeX. Drafts are updated as I write.", g_course:"Course notes", g_course_sub:"Handwritten notes from my courses at Osaka University.", st_course:"Handwritten", term_s:"Spring–Summer", term_a:"Autumn–Winter", 
+    g_self:"Study notes", g_self_sub:"Typeset in LaTeX. Drafts are updated as I write.", g_course:"Course notes", g_course_sub:"Notes from my courses at Osaka University.", st_course:"Handwritten", term_s:"Spring–Summer", term_a:"Autumn–Winter", 
     st_draft:"Draft", st_done:"Complete", written_in:"In", pages:"{n} pages", langname:{zh:"Chinese", ja:"Japanese", en:"English"}, notes_note:"Notes still in progress are marked Draft and updated as I write.", 
     count:"{n} photos", 
     nav_home:"Home", nav_about:"About Me", nav_research:"Research", nav_notes:"Reports & Notes", nav_interests:"Interests", nav_contact:"Contact",
@@ -34,9 +35,10 @@ const T = {
     updated:"Last updated", copy:"Copy", copied:"Copied"
   },
   ja:{
+    st_typeset:"清書", 
     g_report:"レポート", g_report_sub:"実習や授業で書いたレポートです。", g_article:"記事", g_article_sub:"書いた文章です。", art_empty:"まだ記事はありません。", st_report:"レポート",
     mail_lab:"研究室", mail_uni:"学生用", 
-    g_self:"自習ノート", g_self_sub:"LaTeX で書いています。「執筆中」のものは随時更新します。", g_course:"講義ノート", g_course_sub:"大阪大学の授業で取った手書きのノートです。", st_course:"手書き", term_s:"春夏", term_a:"秋冬", 
+    g_self:"自習ノート", g_self_sub:"LaTeX で書いています。「執筆中」のものは随時更新します。", g_course:"講義ノート", g_course_sub:"大阪大学の授業で取ったノートです。", st_course:"手書き", term_s:"春夏", term_a:"秋冬", 
     st_draft:"執筆中", st_done:"完成", written_in:"言語：", pages:"{n} ページ", langname:{zh:"中国語", ja:"日本語", en:"英語"}, notes_note:"「執筆中」のノートは書き進めながら随時更新しています。", 
     count:"{n} 枚", 
     nav_home:"ホーム", nav_about:"自己紹介", nav_research:"研究", nav_notes:"レポート・ノート", nav_interests:"趣味", nav_contact:"連絡先",
@@ -65,9 +67,10 @@ const T = {
     updated:"最終更新", copy:"コピー", copied:"コピーしました"
   },
   zh:{
+    st_typeset:"整理版", 
     g_report:"报告", g_report_sub:"实习和课程中写的报告。", g_article:"文章", g_article_sub:"我写的文章。", art_empty:"暂时还没有文章。", st_report:"报告",
     mail_lab:"研究室", mail_uni:"学校", 
-    g_self:"自学笔记", g_self_sub:"用 LaTeX 写的笔记，“编写中”的会随时更新。", g_course:"课程笔记", g_course_sub:"在大阪大学上课时的手写笔记。", st_course:"手写", term_s:"春夏学期", term_a:"秋冬学期", 
+    g_self:"自学笔记", g_self_sub:"用 LaTeX 写的笔记，“编写中”的会随时更新。", g_course:"课程笔记", g_course_sub:"在大阪大学上课时的笔记。", st_course:"手写", term_s:"春夏学期", term_a:"秋冬学期", 
     st_draft:"编写中", st_done:"已完成", written_in:"语言：", pages:"{n} 页", langname:{zh:"中文", ja:"日语", en:"英语"}, notes_note:"标为“编写中”的笔记还在写，会随时更新。", 
     count:"{n} 张照片", 
     nav_home:"主页", nav_about:"自我介绍", nav_research:"研究", nav_notes:"报告与笔记", nav_interests:"兴趣", nav_contact:"联系方式",
@@ -110,7 +113,12 @@ const NOTES = [
   { kind:"self", file:"notes/semiconductor-notes.pdf", status:"draft", updated:"2026.10.02", pages:37, lang:"ja",
     title:{en:"Semiconductor Notes", ja:"半導体の学習ノート", zh:"半导体学习笔记"},
     topics:{en:"Devices · band theory · carriers · conduction", ja:"デバイス · バンド理論 · キャリア · 電気伝導", zh:"器件 · 能带理论 · 载流子 · 电导"} },
-  /* 课程笔记（手写） */
+  /* 课程笔记 */
+  { kind:"course", file:"notes/current-noise-quantization.pdf", pages:14, lang:"zh", term:"2026 A", badge:"typeset", updated:"2026.11.17",
+    title:{en:"Current Noise and Quantization", ja:"電流雑音と量子化", zh:"电流噪声与量子化"},
+    topics:{en:"Noise spectrum · Landauer formula · shot and thermal noise · scattering-matrix approach · Wick's theorem",
+            ja:"雑音スペクトル · ランダウアー公式 · ショット雑音と熱雑音 · 散乱行列 · ウィックの定理",
+            zh:"噪声谱 · Landauer 公式 · 散粒噪声与热噪声 · 散射矩阵 · Wick 定理"} },
   { kind:"course", file:"notes/solid-state-physics-2.pdf", pages:24, lang:"ja", term:"2025 A",
     title:{en:"Solid State Physics II", ja:"物性物理学 II", zh:"固体物理 II"},
     topics:{en:"Ch.1 Free electron Fermi gas · Ch.2 Energy bands · Ch.3 Semiconductors · Ch.4 Fermi surfaces and metals",
@@ -452,7 +460,7 @@ function setLang(l){
     const termName = t => t ? t.replace(/ S$/, " " + d.term_s).replace(/ A$/, " " + d.term_a) : "";
     const row = n => {
       const meta = [n.term ? termName(n.term) : "", n.date || "", `${d.written_in} ${d.langname[n.lang]||n.lang}`, d.pages.replace("{n}", n.pages), n.updated ? `${d.updated} ${n.updated}` : ""].filter(Boolean).join(" · ");
-      const badge = n.kind === "report" ? `<span class="nstatus course">${esc(d.st_report)}</span>` : n.kind === "self" ? `<span class="nstatus ${n.status}">${esc(n.status === "done" ? d.st_done : d.st_draft)}</span>` : `<span class="nstatus course">${esc(d.st_course)}</span>`;
+      const badge = n.kind === "report" ? `<span class="nstatus course">${esc(d.st_report)}</span>` : n.kind === "self" ? `<span class="nstatus ${n.status}">${esc(n.status === "done" ? d.st_done : d.st_draft)}</span>` : `<span class="nstatus course">${esc(n.badge === "typeset" ? d.st_typeset : d.st_course)}</span>`;
       return `<li>${badge}<span class="nt">${esc(pick(n.title,l))}${n.topics ? `<span class="nc">${esc(pick(n.topics,l))}</span>` : ""}<span class="nm">${esc(meta)}</span></span><a class="pdf" href="${esc(n.file)}" target="_blank" rel="noopener">PDF ↗</a></li>`;
     };
     const group = (k, h, sub) => { const list = NOTES.filter(n => n.kind === k); return list.length ? `<section class="note-group"><h2>${esc(h)}</h2><div class="sec-body"><p class="group-lead">${esc(sub)}</p><ul class="notes">${list.map(row).join("")}</ul></div></section>` : ""; };
